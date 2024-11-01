@@ -1,0 +1,385 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Utility Classes */
+.highlight {
+    color: #4CAF50;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Header/Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the image and text */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust this value to match your desired logo size */
+  }
+  
+  .logo h1 {
+    margin: 0; /* Removes default margin that might cause misalignment */
+  }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-join {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.btn-signin {
+    background: transparent;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 5%;
+    background:  url('resources/background.png') center/cover;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.classes-count {
+    position: absolute;
+    right: 10%;
+    background: #FFD700;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Expertise Section */
+.expertise {
+    padding: 80px 5%;
+    background: #f9f9f9;
+}
+
+.expertise-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/* Courses Section */
+.courses {
+    padding: 80px 5%;
+}
+
+.course-slider {
+    position: relative;
+    margin-top: 40px;
+}
+
+.course-cards {
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+.course-card {
+    min-width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.slider-prev { left: -20px; }
+.slider-next { right: -20px; }
+
+/* At Home Section */
+.at-home {
+    padding: 80px 5%;
+    background: #f9f9f9;
+}
+
+.at-home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.preview-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/* Gallery Section */
+.gallery {
+    padding: 80px 5%;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.vertical-line {
+    width: 3px;
+    height: 25px;
+    background-color: #FFD700;
+}
+
+.gallery-slider {
+    position: relative;
+    margin: 40px 0;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-images img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.gallery-images img.active {
+    width: 300px;
+    height: 400px;
+    opacity: 1;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.testimonial-slider {
+    position: relative;
+    margin: 40px 0;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 60px 5% 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h4 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #FFD700;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-images img {
+        width: 200px;
+        height: 280px;
+    }
+    
+    .gallery-images img.active {
+        width: 250px;
+        height: 330px;
+    }
+    
+    .testimonial-cards {
+        flex-wrap: wrap;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
