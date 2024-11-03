@@ -866,4 +866,7 @@ footer {
     animation: fadeIn 0.5s forwards; /* Animation applied */
 }
 
-/* ... existing code ... */
+.section{
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}
