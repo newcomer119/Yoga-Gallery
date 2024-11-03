@@ -104,9 +104,9 @@ nav {
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 30px;
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
 .nav-links a {
@@ -169,6 +169,7 @@ nav {
   color: white;
   padding: 10px 25px;
   border-radius: 15px;
+    text-decoration: none;
 }
 
 .btn-signin {
@@ -177,6 +178,7 @@ nav {
   color: #375b26;
   padding: 10px 20px;
   border-radius: 15px;
+    text-decoration: none;
 }
 
 /* Hero Section */
@@ -371,6 +373,26 @@ nav {
   }
 }
 
+
+/* At Home Section */
+.at-home {
+    padding: 80px 5%;
+    background: #f9f9f9;
+}
+
+.at-home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.preview-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 /* Gallery Section */
 .gallery {
   padding: 50px 5%;
@@ -542,8 +564,9 @@ footer {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    gap: 15px;
+    gap: 30px;
     margin: 20px 0;
+    font-size: 1.2rem;
   }
 
   .nav-buttons {
@@ -676,6 +699,7 @@ footer {
   height: 100vh;
   padding: 80px 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-menu.active {
@@ -720,6 +744,7 @@ footer {
   background: transparent;
   border: 2px solid #00a86b; /* Green border */
   color: #00a86b; /* Green text */
+    text-decoration: none; /* Remove underline */
 }
 
 .join {
@@ -795,4 +820,27 @@ footer {
   .menu-toggle {
     display: block;
   }
+}
+
+/* ... existing code ... */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#gallery {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 0.5s forwards; /* Animation applied */
+}
+
+.section{
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
 }
