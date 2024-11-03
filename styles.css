@@ -164,7 +164,6 @@ nav {
     color: white;
     padding: 10px 25px;
     border-radius: 15px;
-    text-decoration: none;
 }
 
 .btn-signin {
@@ -173,7 +172,6 @@ nav {
     color: #375B26;
     padding: 10px 20px;
     border-radius: 15px;
-    text-decoration: none;
 }
 
 /* Hero Section */
@@ -666,7 +664,6 @@ footer {
   .btn-signin {
     width: 100%;
     margin: 5px 0;
-    text-decoration: none;
   }
 }
 
@@ -842,10 +839,4 @@ footer {
   .menu-toggle {
     display: block;
   }
-}
-
-/* Ensure no underline for anchor tags */
-.sign-in a,
-.join a {
-    text-decoration: none; /* Remove underline from links */
 }
