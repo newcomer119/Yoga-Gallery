@@ -719,3 +719,60 @@ footer {
     margin: 15px 0;
   }
 }
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .sign-in {
+    background: transparent;
+    border: 2px solid #00A86B; /* Green border */
+    color: #00A86B; /* Green text */
+  }
+  
+  .join {
+    background: #00A86B; /* Green background */
+    border: 2px solid #00A86B;
+    color: white;
+  }
+  
+  .sign-in:hover {
+    background: rgba(0, 168, 107, 0.1); /* Light green background on hover */
+  }
+  
+  .join:hover {
+    background: #008f5b; /* Darker green on hover */
+    border-color: #008f5b;
+  }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Move auth buttons to mobile menu */
+  .auth-buttons {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  /* Add these buttons to mobile menu */
+  .mobile-nav-content .auth-buttons {
+    order: -1; /* This will place buttons at the top of mobile menu */
+  }
+}
