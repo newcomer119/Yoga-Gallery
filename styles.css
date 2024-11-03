@@ -107,6 +107,9 @@ nav {
     display: flex;
     list-style: none;
     gap: 30px;
+    font-family: sans-serif; 
+    font-weight: bold
+    
 }
 
 .nav-links a {
@@ -567,6 +570,8 @@ footer {
     gap: 30px;
     margin: 20px 0;
     font-size: 1.2rem;
+    font-weight: bold;
+    font-family: sans-serif;
   }
 
   .nav-buttons {
