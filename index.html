@@ -5,12 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yoga International</title> 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <body class="crimson-text-regular">
+    <script src="script.js"></script>
   <body>
     <!-- Header/Navigation -->
     <header>
       <nav>
         <div class="logo">
+          <img src="resources/Dummy Logo.svg" alt="Yoga International" />
+          <h1><span class="highlight">Yoga</span> International</h1>
+        </div>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+        <nav class="nav-menu">
+          <ul class="nav-links open-sans-bold">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-buttons open-sans-bold">
+          <a class="btn-join" href="/">Join</a>
+
             <img src="resources/Dummy Logo.svg" alt="Yoga International" /> 
             <h1>Yoga International</h1>
           </div>
@@ -26,6 +52,7 @@
         </ul>
         <div class="nav-buttons">
           <a class="btn-join" href="#">Join</a>
+
           <a class="btn-signin" href="login.html">Sign In</a>
         </div>
       </nav>
@@ -34,9 +61,9 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Practice <span class="highlight">Yoga</span></h1>
-        <h2>With the World's Top Yoga Teachers</h2>
-        <p>
+        <p class="h1">Practice <span class="highlight">Yoga</span></p>
+        <p class="h2">With the World's Top Yoga Teachers</p>
+        <p class="open-sans-regular">
           Stream hundreds of expertly led yoga & meditation classes on any
           device. Your free trial awaits. Cancel online anytime.
         </p>
@@ -73,77 +100,77 @@
 
     <!-- Courses Section -->
     <section class="courses">
-        <h2>Courses Offered</h2>
-        <p>
-          Enhance your skills with our professionally trained teachers who are
-          passionate about yoga
-        </p>
-  
-        <div class="course-grid">
-          <div class="course-cwhaard">
-            <div class="course-image">
-              <img src="resources/course1.jpg" alt="Yoga Course" />
-              <span class="course-price">$120</span>
-            </div>
-            <div class="course-content">
-              <h3>7 Days of Relaxation</h3>
-              <p>Perfect for beginners looking to start their yoga journey</p>
-              <div class="course-info">
-                <div class="instructor">
-                  <img src="resources/instructor1.jpg" alt="Noah Maze" />
-                  <span>Noah Maze</span>
-                </div>
-                <div class="course-meta">
-                  <span><i class="far fa-clock"></i> 45 min</span>
-                  <span><i class="far fa-user"></i> 24 students</span>
-                </div>
-              </div>
-            </div>
+      <h2>Courses Offered</h2>
+      <p>
+        Enhance your skills with our professionally trained teachers who are
+        passionate about yoga
+      </p>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <div class="course-image">
+            <img src="resources/course1.jpg" alt="Yoga Course" />
+            <span class="course-price">$120</span>
           </div>
-  
-          <div class="course-card">
-            <div class="course-image">
-              <img src="resources/course2.jpg" alt="Yoga Course" />
-              <span class="course-price">$150</span>
-            </div>
-            <div class="course-content">
-              <h3>Advanced Vinyasa Flow</h3>
-              <p>Deepen your practice with dynamic flowing sequences</p>
-              <div class="course-info">
-                <div class="instructor">
-                  <img src="resources/instructor2.jpg" alt="Sarah Johnson" />
-                  <span>Sarah Johnson</span>
-                </div>
-                <div class="course-meta">
-                  <span><i class="far fa-clock"></i> 60 min</span>
-                  <span><i class="far fa-user"></i> 18 students</span>
-                </div>
+          <div class="course-content">
+            <h3>7 Days of Relaxation</h3>
+            <p>Perfect for beginners looking to start their yoga journey</p>
+            <div class="course-info">
+              <div class="instructor">
+                <img src="resources/instructor1.jpg" alt="Noah Maze" />
+                <span>Noah Maze</span>
               </div>
-            </div>
-          </div>
-  
-          <div class="course-card">
-            <div class="course-image">
-              <img src="resources/course3.jpg" alt="Yoga Course" />
-              <span class="course-price">$135</span>
-            </div>
-            <div class="course-content">
-              <h3>Meditation Mastery</h3>
-              <p>Learn essential meditation techniques for inner peace</p>
-              <div class="course-info">
-                <div class="instructor">
-                  <img src="resources/instructor3.jpg" alt="Michael Chen" />
-                  <span>Michael Chen</span>
-                </div>
-                <div class="course-meta">
-                  <span><i class="far fa-clock"></i> 30 min</span>
-                  <span><i class="far fa-user"></i> 32 students</span>
-                </div>
+              <div class="course-meta">
+                <span><i class="far fa-clock"></i> 45 min</span>
+                <span><i class="far fa-user"></i> 24 students</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <div class="course-card">
+          <div class="course-image">
+            <img src="resources/course2.jpg" alt="Yoga Course" />
+            <span class="course-price">$150</span>
+          </div>
+          <div class="course-content">
+            <h3>Advanced Vinyasa Flow</h3>
+            <p>Deepen your practice with dynamic flowing sequences</p>
+            <div class="course-info">
+              <div class="instructor">
+                <img src="resources/instructor2.jpg" alt="Sarah Johnson" />
+                <span>Sarah Johnson</span>
+              </div>
+              <div class="course-meta">
+                <span><i class="far fa-clock"></i> 60 min</span>
+                <span><i class="far fa-user"></i> 18 students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-image">
+            <img src="resources/course3.jpg" alt="Yoga Course" />
+            <span class="course-price">$135</span>
+          </div>
+          <div class="course-content">
+            <h3>Meditation Mastery</h3>
+            <p>Learn essential meditation techniques for inner peace</p>
+            <div class="course-info">
+              <div class="instructor">
+                <img src="resources/instructor3.jpg" alt="Michael Chen" />
+                <span>Michael Chen</span>
+              </div>
+              <div class="course-meta">
+                <span><i class="far fa-clock"></i> 30 min</span>
+                <span><i class="far fa-user"></i> 32 students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Gallery Section -->
     <section class="gallery">
@@ -155,15 +182,20 @@
 
       <div class="gallery-slider">
         <div class="gallery-images">
-          <img src="resources/gallery blur.png" alt="Yoga Pose - Downward Dog" />
+          <img
+            src="resources/gallery blur.png"
+            alt="Yoga Pose - Downward Dog"
+          />
           <img
             src="resources/gallery.png"
             alt="Yoga Pose - Warrior"
             class="active"
           />
-          <img src="resources/gallery blur.png" alt="Yoga Pose - Downward Dog" />
+          <img
+            src="resources/gallery blur.png"
+            alt="Yoga Pose - Downward Dog"
+          />
         </div>
-
       </div>
     </section>
 
@@ -177,7 +209,6 @@
       </p>
 
       <div class="testimonial-slider">
-        
         <div class="testimonial-cards">
           <div class="testimonial">
             <img src="resources/Ellipse 6.png" alt="Student Testimonial" />
@@ -192,7 +223,6 @@
             <img src="resources/Ellipse 9.png" alt="Student Testimonial" />
           </div>
         </div>
-        
       </div>
     </section>
 
@@ -258,16 +288,16 @@
 
       <div class="social-links">
         <a href="#" class="social-icon">
-          <img src="assets/twitter.webp" alt="Twitter" />
+          <img src="resources/icons/facebook.svg" alt="Twitter" />
         </a>
         <a href="#" class="social-icon">
-          <img src="assets/fb1.png" alt="Facebook" />
+          <img src="resources/icons/instagram.svg" alt="Facebook" />
         </a>
         <a href="#" class="social-icon">
-          <img src="assets/instagram.jpeg" alt="Instagram" />
+          <img src="resources/icons/linkedin.svg" alt="Instagram" />
         </a>
         <a href="#" class="social-icon">
-          <img src="assets/pin2.png" alt="Pinterest" />
+          <img src="resources/icons/twitter-x.svg" alt="Pinterest" />
         </a>
       </div>
     </footer>
