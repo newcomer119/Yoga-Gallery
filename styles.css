@@ -672,52 +672,41 @@ footer {
   transform: translateY(8px);
 }
 
-/* Hamburger Menu Animation */
-.menu-btn.open .menu-btn__burger {
-  background: transparent;
+/* Show menu when active */
+.nav-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 250px;
+  height: 100vh;
+  padding: 80px 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
 }
-
-.menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg);
-}
-
-.menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg);
-}
-
-/* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
-  .menu-btn {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 80%;
-    height: 100vh;
-    background: #fff;
-    padding: 80px 20px;
-    transition: 0.5s;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  }
 
   .nav-menu.active {
     right: 0;
   }
 
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
 
-  .nav-links li {
-    margin: 15px 0;
-  }
+.nav-links li {
+  margin: 20px 0;
+}
+
+.nav-auth {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-auth button {
+  width: 100%;
 }
 
 .auth-buttons {
