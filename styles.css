@@ -1,3 +1,36 @@
+/* Fonts */
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.open-sans-bold {
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
+}
+
+.open-sans-regular {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
+}
+
+
 /* Reset and Global Styles */
 * {
     margin: 0;
@@ -8,7 +41,7 @@
 html, body {
     min-height: 100vh; /* Ensures full viewport height */
     width: 100%;
-    background-color: rgb(247, 247, 211);
+    background: linear-gradient(to bottom, #FAFAFA 0%, #E4E4E4 100%);;
 }
 
 body {
@@ -19,7 +52,7 @@ body {
 
 /* Utility Classes */
 .highlight {
-    color: #4CAF50;
+    color: #375B26;
 }
 
 .btn {
@@ -45,7 +78,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 10px 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -62,6 +95,7 @@ nav {
   
   .logo h1 {
     margin: 0; /* Removes default margin that might cause misalignment */
+    font-size: 18px;
   }
 
 .nav-links {
@@ -83,14 +117,15 @@ nav {
 
 .nav-buttons {
     display: flex;
+    justify-content: center;
     gap: 15px;
 }
 .btn-book {
-    background-color: #FFD700; /* Yellow background */
+    background-color: #D3B10F; /* Yellow background */
     color: #FFFFFF; /* White text */
     padding: 12px 30px;
     border: none;
-    border-radius: 25px; /* Rounded corners */
+    border-radius: 10px; /* Rounded corners */
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -101,8 +136,8 @@ nav {
     
     /* Added margins */
     margin: 20px 0;        /* Top and bottom margin */
-    margin-left: 15px;     /* Left margin */
-    margin-right: 15px;    /* Right margin */
+    margin-left: 10px;     /* Left margin */
+    margin-right: 10px;    /* Right margin */
 }
 
 /* Alternative shorthand for margins */
@@ -125,18 +160,18 @@ nav {
   }
 
 .btn-join {
-    background: #4CAF50;
+    background: #D3B10F;
     color: white;
     padding: 10px 25px;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .btn-signin {
     background: transparent;
-    border: 2px solid #4CAF50;
-    color: #4CAF50;
-    padding: 10px 25px;
-    border-radius: 25px;
+    border: 2px solid #375B26;
+    color: #375B26;
+    padding: 10px 20px;
+    border-radius: 15px;
 }
 
 /* Hero Section */
@@ -152,21 +187,20 @@ nav {
     max-width: 600px;
 }
 
-.hero h1 {
+.hero .h1 {
     font-size: 4rem;
-    margin-bottom: 20px;
 }
 
-.hero h2 {
+.hero .h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
     color: #666;
+    margin-left: 0;
 }
 
 .classes-count {
     position: absolute;
     right: 10%;
-    background: #FFD700;
+    background: #D3B10F;
     padding: 20px;
     border-radius: 50%;
     text-align: center;
@@ -382,7 +416,7 @@ nav {
 .vertical-line {
     width: 3px;
     height: 25px;
-    background-color: #FFD700;
+    background-color: #D3B10F;
 }
 
 .gallery-slider {
@@ -451,7 +485,7 @@ footer {
 }
 
 .footer-section h4 {
-    color: #FFD700;
+    color: #D3B10F;
     margin-bottom: 20px;
 }
 
@@ -470,7 +504,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #FFD700;
+    color: #D3B10F;
 }
 
 .social-links {
@@ -491,7 +525,7 @@ footer {
 }
 
 .social-icon:hover {
-    background-color: #FFD700;
+    background-color: #D3B10F;
 }
 
 .social-icon img {
