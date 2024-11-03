@@ -717,6 +717,7 @@ footer {
   height: 100vh;
   padding: 80px 20px;
   box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-menu.active {
