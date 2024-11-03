@@ -706,50 +706,134 @@ footer {
   transform: translateY(8px);
 }
 
-/* Hamburger Menu Animation */
-.menu-btn.open .menu-btn__burger {
-  background: transparent;
+/* Show menu when active */
+.nav-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 250px;
+  height: 100vh;
+  padding: 80px 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
 }
 
-.menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg);
+.nav-menu.active {
+  display: block;
 }
 
-.menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg);
+.nav-links {
+  list-style: none;
+  padding: 0;
 }
+
+.nav-links li {
+  margin: 20px 0;
+}
+
+.nav-auth {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-auth button {
+  width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .sign-in {
+    background: transparent;
+    border: 2px solid #00A86B; /* Green border */
+    color: #00A86B; /* Green text */
+  }
+  
+  .join {
+    background: #00A86B; /* Green background */
+    border: 2px solid #00A86B;
+    color: white;
+  }
+  
+  .sign-in:hover {
+    background: rgba(0, 168, 107, 0.1); /* Light green background on hover */
+  }
+  
+  .join:hover {
+    background: #008f5b; /* Darker green on hover */
+    border-color: #008f5b;
+  }
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
-  .menu-btn {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 80%;
-    height: 100vh;
-    background: #fff;
-    padding: 80px 20px;
-    transition: 0.5s;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .nav-links {
+  /* Move auth buttons to mobile menu */
+  .auth-buttons {
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
   }
 
-  .nav-links li {
-    margin: 15px 0;
+  .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  /* Add these buttons to mobile menu */
+  .mobile-nav-content .auth-buttons {
+    order: -1; /* This will place buttons at the top of mobile menu */
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 }
