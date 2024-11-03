@@ -101,7 +101,9 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    gap: 45px;
 }
 
 .nav-links a {
@@ -164,6 +166,7 @@ nav {
     color: white;
     padding: 10px 25px;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 .btn-signin {
@@ -172,6 +175,7 @@ nav {
     color: #375B26;
     padding: 10px 20px;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 /* Hero Section */
@@ -400,6 +404,9 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: px;
 }
 /* Gallery Section */
 .gallery {
@@ -583,8 +590,9 @@ footer {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    gap: 15px;
+    gap: 30px;
     margin: 20px 0;
+    font-size: 1.2rem;
   }
 
   .nav-buttons {
@@ -769,7 +777,6 @@ footer {
     background: #00A86B; /* Green background */
     border: 2px solid #00A86B;
     color: white;
-    text-decoration: none; /* Remove underline */
   }
   
   .sign-in:hover {
@@ -840,3 +847,23 @@ footer {
     display: block;
   }
 }
+
+/* ... existing code ... */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#gallery {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 0.5s forwards; /* Animation applied */
+}
+
+/* ... existing code ... */
