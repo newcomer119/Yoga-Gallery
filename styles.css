@@ -685,9 +685,9 @@ footer {
   box-shadow: -2px 0 5px rgba(0,0,0,0.1);
 }
 
-  .nav-menu.active {
-    right: 0;
-  }
+.nav-menu.active {
+  display: block;
+}
 
 .nav-links {
   list-style: none;
@@ -763,5 +763,43 @@ footer {
   /* Add these buttons to mobile menu */
   .mobile-nav-content .auth-buttons {
     order: -1; /* This will place buttons at the top of mobile menu */
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 }
